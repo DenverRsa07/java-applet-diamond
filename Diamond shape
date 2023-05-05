@@ -1,0 +1,28 @@
+import java.applet.Applet;
+import java.awt.*;
+
+/**@authors: Joseph Nkomo 
+ 
+ */
+public class Diamond extends Applet
+{
+ private int [] PentagonX = {200,80, 200, 320};
+     private int [] PentagonY = {10, 130, 250, 130};
+    
+    public void init(){
+     setSize(700, 500);
+        Font myf=new Font("Arial", Font.BOLD,30);
+        setFont(myf);
+    }
+ public void paint(Graphics g){
+     g.setColor(Color.red);
+      g.drawPolygon(PentagonX, PentagonY,4);
+            
+      
+      g.setColor(Color.yellow);
+      g.fillPolygon(PentagonX, PentagonY, 4);
+      
+    }
+    
+}
+   
